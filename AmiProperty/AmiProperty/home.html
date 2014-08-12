@@ -1,0 +1,96 @@
+<!-- Marketing messaging and featurettes
+    ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container">
+    <!-- Jumbotron -->
+    <div class="jumbotron" ng-controller="LatestNewsCtrl">
+        <h1>amiProperty</h1>
+        <p class="lead amiSubHeader">Glasgow's newest letting agent.</p>
+        <a ng-click="scrollTo('TNDetails')">Latest News...</a>
+    </div>
+</div>
+<div class="container marketing">
+    <div class="row text-center">
+        <div class="col-lg-12 containerdiv">
+            <img class="img-square" src="./images/glasgow.jpg" alt="glasgow">
+            <a href="#properties">
+                <img class="cornerimage" src="./images/viewProperties.png" alt="ami logo">
+            </a>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+    <hr id="TNDetails" class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="./images/newAmiLogo.jpg" alt="ami logo">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Tenant Registration Night <span class="text-muted">@ Mercure Hotel</span></h2>
+            <p class="lead">
+                amiProperty is hosting a tenant registration night in the Mercure Hotel on Ingram Street Glasgow, 
+7pm till 9pm on Tuesday 4th March.
+            </p>
+            <p>
+                This night is aimed at anyone who would be looking to rent 
+a flat in Glasgow, Renfrewshire or surrounding areas over the next 3 months. In order to register 
+you will need one form of photographic ID, one proof of current address and the details of a referee 
+who may be contacted for either an employment or personal reference. amiProperty will then be 
+targeting landlords in the areas YOU want to live - taking the stress out of property hunting for you 
+and ensuring that you have first refusal on any properties on our books and access to properties that 
+haven't even been listed yet! The entire process is completely free and your details will only be used 
+by ami to find you your perfect next home. No other letting agency will give you such a personal 
+service in trying to find your new home so why not come along, meet the team and sign up to this 
+fantastic opportunity to let the letting agent work for you for a change!
+            </p>
+            <p>
+                For further information please <a href="#contact">contact us.</a>
+            </p>
+            <p>Look forward to seeing you all then!!</p>
+            <p>
+                Angela and team, amiProperty x
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">amiProperty welcomes the Games <span class="text-muted">Glasgow's time to shine...</span></h2>
+            <p class="lead">
+                The Summer of 2014 will be an amazing time for Glasgow with the arrival of the Games to the City, and at amiProperty we are excited to work with some fantastic landlords to offer first class accommodation and events packages in the heart of the City for the duration of the Games.
+            </p>
+            <p>
+                If you are lucky enough to have a ticket for the Games and are a visitor to the City then please get in touch for further information on our fantastic events and accommodation packages.  We think you will be impressed with our Tenants Package.
+            </p>
+            <p>
+                And landlords won't miss out either.  If you have a property within the city centre that is available for the duration of the Games then please take a look at our Landlords Package.
+            </p>
+            <p>Both packages come with a free consultation.</p>
+            <div class="btn-group" ng-controller="ModalCtrl">
+                <button class="btn btn-primary btn-small" ng-click="open('tenant')">Tenants Package</button>
+                <button class="btn btn-primary btn-small" ng-click="open('landlord')">Landlords Package</button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="./images/glasgow.jpg" alt="Commonwealth games Glasgow 2014">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="./images/underConstruction.jpg" alt="site under construction">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">amiProperty is on Citylets <span class="text-muted">we have some fantastic flats available already!</span></h2>
+            <p class="lead">Our website search facility is currently under construction so in the meantime please check out our fantastic properties available to rent at the moment on <a href="http://www.citylets.co.uk/letting-agents-glasgow/ami-property/">Citylets</a> , or <a href="#contact">contact us</a> directly for futher information.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="amiproperty">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>amiProperty - Letting Agents</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./include/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./include/css/amiproperty.css" rel="stylesheet">
+	
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body id="bodyTop" ng-controller="NavCtrl">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+			  <a class="navbar-brand" href="#Home"> <img src="./images/amiLogo.jpg"/></a>
+            </div>
+            <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+			   <li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Home</a></li>
+               <li ng-class="navClass('about')"><a href='' ng-click="loadAbout()">About</a></li>
+               <li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  <div id="viewStart" ng-view></div>
+
+      <!-- FOOTER -->
+	  	<div class ="container" ng-controller="BackTopCtrl">
+      <footer>
+        <p class="pull-right"><a ng-click="scrollTo('bodyTop')">Back to top</a></p>
+        <p>&copy; amiProperty &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		<!-- AddThis Follow BEGIN -->
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+<a class="addthis_button_facebook_follow" addthis:userid="amiPropertyltd/"></a>
+<a class="addthis_button_twitter_follow" addthis:userid="amiProperty"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=Davieliv"></script>
+<!-- AddThis Follow END -->
+      </footer>
+	  </div>
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./include/js/jquery-1.10.2.min.js"></script>
+	<script src="./include/js/amiproperty.js"></script>
+	<script src="./include/js/bootstrap.min.js"></script>
+	
+	<!-- Angular JS scrips -->
+	<script src="./include/js/angular.min.js"></script>
+	<script src="./include/js/angular-route.min.js"></script>
+	<script src="./include/js/controllers/controllers.js"></script>
+	<script src="./include/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+	
+  </body>
+</html>

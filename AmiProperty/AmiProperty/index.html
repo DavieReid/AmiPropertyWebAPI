@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="amiproperty">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>amiProperty - Letting Agents</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/metro-ui/css/metro-bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/metro-ui/css/metro-bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="Content/amiproperty.css" rel="stylesheet" />
+</head>
+<!-- NAVBAR
+================================================== -->
+<body id="bodyTop" ng-controller="NavCtrl">
+    <div id="myNavBar" class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="ami-brand" href="#Home">
+                            <img src="./images/amiLogo.jpg" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Home</a></li>
+                            <li ng-class="navClass('about')"><a href='' ng-click="loadAbout()">About</a></li>
+                            <li ng-class="navClass('properties')"><a href='' ng-click="loadProperties()">Properties</a></li>
+                            <li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="viewStart" ng-view></div>
+
+    <!-- FOOTER -->
+    <div class="container" ng-controller="BackTopCtrl">
+        <footer>
+            <p class="pull-right"><a ng-click="scrollTo('bodyTop')">Back to top</a></p>
+            <p>&copy; amiProperty &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <!-- AddThis Follow BEGIN -->
+            <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+                <a class="addthis_button_facebook_follow" addthis:userid="amiPropertyltd/"></a>
+                <a class="addthis_button_twitter_follow" addthis:userid="amiProperty"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=Davieliv"></script>
+            <!-- AddThis Follow END -->
+        </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/metro-ui/jquery.ui.widget.js"></script>
+    <script src="Scripts/metro-ui/metro.min.js"></script>
+    <script src="Scripts/App/amiproperty.js"></script>
+
+
+    <!-- Angular JS scripts -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/ui-utils.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.10.0.min.js"></script>
+
+    <!-- Custom Angular scripts -->
+    <script src="Scripts/App/Controllers/controllers.js"></script>
+    <script src="Scripts/App/Services/propertiesService.js"></script>
+        <script src="Scripts/App/Filters/propertyFilters.js"></script>
+    <script src="Scripts/App/Controllers/PropertiesController.js"></script>
+</body>
+
+</html>

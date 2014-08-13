@@ -275,6 +275,9 @@
     <Content Include="Content\metro-ui\fonts\iconFont.ttf" />
     <Content Include="Content\metro-ui\fonts\iconFont.json" />
     <Content Include="Content\metro-ui\fonts\iconFont.eot" />
+    <Content Include="Scripts\App_Tests\Filters\OrderPropertyByTest.js" />
+    <Content Include="Scripts\App_Tests\Filters\PropertyAreaFilterTest.js" />
+    <Content Include="Scripts\App_Tests\Filters\PropertyTypeFilterTest.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -607,6 +610,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\App\Factories\" />
+    <Folder Include="Scripts\App_Tests\Controllers\" />
+    <Folder Include="Scripts\App_Tests\Factories\" />
+    <Folder Include="Scripts\App_Tests\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

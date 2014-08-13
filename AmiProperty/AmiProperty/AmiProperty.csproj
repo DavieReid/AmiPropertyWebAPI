@@ -609,7 +609,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\App\Factories\" />
     <Folder Include="Scripts\App_Tests\Controllers\" />
     <Folder Include="Scripts\App_Tests\Factories\" />
     <Folder Include="Scripts\App_Tests\Services\" />

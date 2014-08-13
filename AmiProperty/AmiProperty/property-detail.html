@@ -11,7 +11,7 @@
                 <img class="featurette-image img-responsive" data-ng-src="{{data.propertyDetails.Images[0].ImageUrl}}" alt="Property Image">
             </div>
             <div class="col-md-7">
-                <h2 class="featurette-heading">This property is {{data.propertyDetails.Status.DisplayName}}<span class="text-muted"> at {{data.propertyDetails.Price}}</span></h2>
+                <h2 class="featurette-heading">This property is {{data.propertyDetails.Status.DisplayName}}<span class="text-muted"> at {{data.propertyDetails.Price | currency}}</span></h2>
                 <p class="lead">
                     {{data.propertyDetails.FullDescription}}
                 </p>

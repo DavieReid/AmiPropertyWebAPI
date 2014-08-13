@@ -19,7 +19,7 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body id="bodyTop" ng-controller="NavCtrl">
+<body id="bodyTop" data-ng-controller="NavCtrl">
     <div id="myNavBar" class="navbar-wrapper">
         <div class="container">
             <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -36,10 +36,10 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Home</a></li>
-                            <li ng-class="navClass('about')"><a href='' ng-click="loadAbout()">About</a></li>
-                            <li ng-class="navClass('properties')"><a href='' ng-click="loadProperties()">Properties</a></li>
-                            <li ng-class="navClass('contact')"><a href='' ng-click="loadContact()">Contact</a></li>
+                            <li data-ng-class="navClass('home')"><a href="" data-ng-click="loadHome()">Home</a></li>
+                            <li data-ng-class="navClass('about')"><a href="" data-ng-click="loadAbout()">About</a></li>
+                            <li data-ng-class="navClass('properties')"><a href="" data-ng-click="loadProperties()">Properties</a></li>
+                            <li data-ng-class="navClass('contact')"><a href="" data-ng-click="loadContact()">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
     <!-- FOOTER -->
     <div class="container" ng-controller="BackTopCtrl">
         <footer>
-            <p class="pull-right"><a ng-click="scrollTo('bodyTop')">Back to top</a></p>
+            <p class="pull-right"><a data-ng-click="scrollTo('bodyTop')">Back to top</a></p>
             <p>&copy; amiProperty &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
             <!-- AddThis Follow BEGIN -->
             <div class="addthis_toolbox addthis_32x32_style addthis_default_style">

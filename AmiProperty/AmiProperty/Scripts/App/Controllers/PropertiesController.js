@@ -22,8 +22,6 @@ angular.module('amiproperty').controller('PropertiesController',
                                 { name: 'Price - Lowest', value: 'Price,false' }, ];
 
         $scope.orderProp = $scope.orderOptions[0].value;
-
-
     });
 
 
@@ -35,7 +33,12 @@ angular.module('amiproperty').controller('PropertyDetailsController',
 
         MyProperties.get({ Id: $routeParams.Id }, (function (response) {
             $scope.data.propertyDetails = response;
+            $scope.data.mainImageUrl = response.Images[0].ImageUrl;
         }));
+
+        $scope.setImage = function (imageUrl) {
+            $scope.data.mainImageUrl = imageUrl;
+        }
     });
 
 //populate the scope with the data used for the filter select boxes

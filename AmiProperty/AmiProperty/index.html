@@ -12,10 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="Content/metro-ui/css/metro-bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/metro-ui/css/metro-bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="Content/amiproperty.css" rel="stylesheet" />
+    <link href="Content/amiproperty_animate.css" rel="stylesheet" />
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -46,8 +46,10 @@
             </div>
         </div>
     </div>
-    <div id="viewStart" ng-view></div>
-
+    <!--Main view goes here-->
+    <div class="view-container">
+        <div id="viewStart" class="view-frame" data-ng-view></div>
+    </div>
     <!-- FOOTER -->
     <div class="container" ng-controller="BackTopCtrl">
         <footer>
@@ -83,7 +85,7 @@
     <script src="Scripts/ui-bootstrap-tpls-0.10.0.min.js"></script>
 
     <!-- Custom Angular scripts -->
-        <script src="Scripts/App/amiproperty.js"></script>
+    <script src="Scripts/App/amiproperty.js"></script>
     <script src="Scripts/App/Controllers/controllers.js"></script>
     <script src="Scripts/App/Services/propertiesService.js"></script>
     <script src="Scripts/App/Filters/propertyFilters.js"></script>

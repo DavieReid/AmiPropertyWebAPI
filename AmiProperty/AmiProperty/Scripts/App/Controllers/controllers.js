@@ -105,3 +105,5 @@ var ModalInstanceCtrl = function ($scope, $modalInstance) {
         $modalInstance.dismiss('close');
     };
 };
+
+

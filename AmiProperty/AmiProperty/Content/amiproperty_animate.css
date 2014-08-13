@@ -1,0 +1,107 @@
+﻿.view-container {
+    position: relative;
+}
+
+.view-frame.ng-enter, .view-frame.ng-leave {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Make the view slide to the left when it is leaving*/
+.view-frame.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease-in;
+    -moz-animation: slideOutLeft 0.5s both ease-in;
+    animation: slideOutLeft 0.5s both ease-in;
+}
+
+/*Make the view slide in from the right when it is entering*/
+.view-frame.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease-in;
+    -moz-animation: slideInRight 0.5s both ease-in;
+    animation: slideInRight 0.5s both ease-in;
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); }
+	to 		{ -webkit-transform: translateX(0); }
+}
+
+/* slide out left bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+
+/*  ng-repeat Animation  */
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    position: relative;
+    left: 0;
+}
+
+.repeat-animation.ng-enter {
+    opacity: 0;
+}
+
+    .repeat-animation.ng-enter.ng-enter-active {
+        opacity: 1;
+    }
+
+.repeat-animation.ng-leave {
+    opacity: 1;
+}
+
+    .repeat-animation.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+.repeat-animation.ng-move {
+    left: 0;
+    opacity: 0.5;
+}
+
+    .repeat-animation.ng-move.ng-move-active {
+        left: 0;
+        opacity: 1;
+    }
+
+/*  ng-hide Animation  */
+.hide-fade.ng-hide-add, .hide-fade.ng-hide-remove {
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    transition: all linear 1s;
+    display: block!important;
+}
+
+    .hide-fade.ng-hide-add.ng-hide-add-active,
+    .hide-fade.ng-hide-remove {
+        opacity: 0;
+    }
+
+        .hide-fade.ng-hide-add,
+        .hide-fade.ng-hide-remove.ng-hide-remove-active {
+            opacity: 1;
+        }

@@ -1,4 +1,4 @@
-﻿angular.module('amiproperty.filters', [])
+﻿angular.module('amiproperty.filters')
     .filter('propertyTypeFilter', function () {
         return function (properties, type) {
             if (!type) { return properties; }

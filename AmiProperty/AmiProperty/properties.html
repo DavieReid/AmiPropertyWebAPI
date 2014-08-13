@@ -31,7 +31,7 @@
                         <div class="row">
                             <p class="col-md-4">
                                 Choose Type: 
-                                <select data-ng-model="selectedType" data-ng-options="p.name for p in data.propertyTypes">
+                                <select data-ng-model="selectedType" data-ng-options="p.name for p in data.propertyTypes | unique:'name'">
                                     <option value="">Any</option>
                                 </select>
                             </p>

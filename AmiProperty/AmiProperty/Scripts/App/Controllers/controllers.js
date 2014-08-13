@@ -1,5 +1,5 @@
 //define the main amiProperty module.
-angular.module('amiproperty', ['ui.bootstrap', 'ngRoute', 'amiproperty.services', 'amiproperty.filters', 'ngAnimate','ui.utils']);
+angular.module('amiproperty', ['ngRoute', 'ngAnimate', 'ui.utils', 'ui.bootstrap', 'amiproperty.services', 'amiproperty.filters']);
 
 angular.module('amiproperty')
     .config(function ($routeProvider, $locationProvider, $httpProvider) {

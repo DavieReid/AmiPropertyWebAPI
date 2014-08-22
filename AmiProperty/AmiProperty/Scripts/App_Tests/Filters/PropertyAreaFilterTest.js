@@ -31,5 +31,6 @@
         // Assert.
         expect(result.length).toEqual(1);
         expect(result[0].Address.Area).toEqual('Glasgow');
+
     });
 });

@@ -32,7 +32,6 @@
         // Assert
         expect(result.length).toEqual(2);
         expect(result[0].Title).toEqual('Davie');
-
     });
 
     //Test 2

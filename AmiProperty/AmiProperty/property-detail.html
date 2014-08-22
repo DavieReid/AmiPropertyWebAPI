@@ -1,4 +1,4 @@
-﻿<div class="container marketing metro" data-ng-controller="PropertyDetailsController">
+﻿<div class="container marketing" data-ng-controller="PropertyDetailsController">
     <div class="about-intro">
         <h1>{{data.propertyDetails.Title}}</h1>
         <p class="lead">{{data.propertyDetails.Address.HouseNumber}} {{data.propertyDetails.Address.Street}}, {{data.propertyDetails.Address.Town}}, {{data.propertyDetails.Address.Area}}, {{data.propertyDetails.Address.PostCode}}</p>
@@ -16,8 +16,8 @@
                 </p>
             </div>
         </div>
-        <hr class="featurette-divider">
-        <div class="row">
+            <hr class="featurette-divider">
+        <div class="row metro">
             <div data-ng-repeat="propertyImage in data.propertyDetails.Images">
                 <div class="tile double">
                     <div class="tile-content image">

@@ -276,6 +276,7 @@
     <Content Include="Content\metro-ui\fonts\iconFont.ttf" />
     <Content Include="Content\metro-ui\fonts\iconFont.json" />
     <Content Include="Content\metro-ui\fonts\iconFont.eot" />
+    <Content Include="Scripts\App_Tests\e2e\Routing_test.js" />
     <Content Include="Scripts\App_Tests\Filters\OrderPropertyByTest.js" />
     <Content Include="Scripts\App_Tests\Filters\PropertyAreaFilterTest.js" />
     <Content Include="Scripts\App_Tests\Filters\PropertyTypeFilterTest.js" />

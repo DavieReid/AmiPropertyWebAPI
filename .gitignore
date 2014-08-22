@@ -220,3 +220,10 @@ AmiProperty/Karma/config/Log/Test_Output/Firefox 31.0.0 (Windows 8)/index.html
 AmiProperty/Karma/config/Log/Test_Output/IE 10.0.0 (Windows 8)/index.html
 AmiProperty/Testing/package.json
 AmiProperty/Test/config/Log/Test_Output/report.html
+AmiProperty/Karma/config/Log/Template/jasmine_template.html
+AmiProperty/Karma/config/my.conf.js
+AmiProperty/AmiProperty/Scripts/App_Tests/e2e/Routing_test.js
+AmiProperty/Test/config/karma.conf.js
+AmiProperty/Test/config/protractor.conf.js
+AmiProperty/Test/Gruntfile.js
+AmiProperty/Test/package.json

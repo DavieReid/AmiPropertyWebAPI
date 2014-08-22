@@ -215,3 +215,8 @@ $RECYCLE.BIN/
 AmiProperty/Karma/Log/Test_Output/Chrome 36.0.1985 (Windows 8)/index.html
 AmiProperty/Karma/Log/Test_Output/Firefox 31.0.0 (Windows 8)/index.html
 AmiProperty/Karma/Log/Test_Output/IE 10.0.0 (Windows 8)/index.html
+AmiProperty/Karma/config/Log/Test_Output/Chrome 36.0.1985 (Windows 8)/index.html
+AmiProperty/Karma/config/Log/Test_Output/Firefox 31.0.0 (Windows 8)/index.html
+AmiProperty/Karma/config/Log/Test_Output/IE 10.0.0 (Windows 8)/index.html
+AmiProperty/Testing/package.json
+AmiProperty/Test/config/Log/Test_Output/report.html

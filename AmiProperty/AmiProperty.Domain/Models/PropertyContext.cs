@@ -27,6 +27,7 @@ namespace AmiProperty.Domain.Models
         public DbSet<PropertyStatus> Status { get; set; }
         public DbSet<PropertyType> Types { get; set; }
         public DbSet<PropertyAddress> Address { get; set; }
+        public DbSet<KeyFeature> KeyFeatures { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -37,13 +38,22 @@ namespace AmiProperty.Domain.Models
             modelBuilder.Configurations.Add(new StatusMap());
             modelBuilder.Configurations.Add(new TypeMap());
             modelBuilder.Configurations.Add(new AddressMap());
+            modelBuilder.Configurations.Add(new KeyFeatureMap());
 
             modelBuilder.Entity<PropertyImage>()
                 .HasRequired<Property>(p => p.Property)
                 .WithMany(s => s.Images).HasForeignKey(s => s.PropertyId);
 
-            //modelBuilder.Entity<PropertyAddress>()
-               // .HasRequired
+            //Use map to specify joining table and keys.
+            modelBuilder.Entity<Property>()
+                .HasMany(p => p.KeyFeatures)
+                .WithMany()
+                .Map(m =>
+                    {
+                        m.MapLeftKey("PropertyId");
+                        m.MapRightKey("FeatureId");
+                        m.ToTable("PropertyFeatures");
+                    });
         }
     }
 }

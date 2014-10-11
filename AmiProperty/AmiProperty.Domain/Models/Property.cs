@@ -24,5 +24,7 @@ namespace AmiProperty.Domain.Models
         public bool Available { get; set; }
 
         public virtual ICollection<PropertyImage> Images { get; set; }
+
+        public virtual ICollection<KeyFeature> KeyFeatures { get; set; }
     }
 }

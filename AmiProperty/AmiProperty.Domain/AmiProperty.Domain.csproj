@@ -52,11 +52,13 @@
     <Compile Include="Interfaces\IOrderableDisplay.cs" />
     <Compile Include="Mapping\AddressMap.cs" />
     <Compile Include="Mapping\ImageMap.cs" />
+    <Compile Include="Mapping\KeyFeatureMap.cs" />
     <Compile Include="Mapping\PropertyMap.cs" />
     <Compile Include="Mapping\StatusMap.cs" />
     <Compile Include="Mapping\TypeMap.cs" />
     <Compile Include="Models\BaseObject.cs" />
     <Compile Include="Interfaces\IPropertyRepository.cs" />
+    <Compile Include="Models\KeyFeature.cs" />
     <Compile Include="Models\Property.cs" />
     <Compile Include="Interfaces\IProperty.cs" />
     <Compile Include="Models\PropertyAddress.cs" />

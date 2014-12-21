@@ -159,20 +159,41 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\ami-property-logo_FINAL.jpeg" />
     <Content Include="Images\amiLogo.jpg" />
     <Content Include="Images\angela.jpg" />
     <Content Include="Images\badge.png" />
     <Content Include="Images\banner.png" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street balcony view.JPG" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street bathrom.JPG" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street ensuite.JPG" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street kitchen - diner.JPG" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street lounge - diner.JPG" />
+    <Content Include="Images\executiveLets\1004\Buchanan Street lounge.JPG" />
+    <Content Include="Images\executiveLets\1005\TIC balcony.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC bathroom.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC bedroom.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC courtyard.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC external.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC kitchen diner.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC kitchen.jpg" />
+    <Content Include="Images\executiveLets\1005\TIC lounge.jpg" />
     <Content Include="Images\forSale.jpg" />
     <Content Include="Images\glasgow-small.png" />
     <Content Include="Images\glasgow.jpg" />
     <Content Include="Images\newAmiLogo.jpg" />
     <Content Include="Images\renovate.jpg" />
+    <Content Include="Images\staff\angelaProfile.jpg" />
+    <Content Include="Images\staff\benProfile.jpg" />
+    <Content Include="Images\staff\gillianProfile.jpg" />
+    <Content Include="Images\staff\paulProfile.jpg" />
     <Content Include="Images\toLet.jpg" />
     <Content Include="Images\underConstruction.jpg" />
     <Content Include="Images\viewProperties.png" />
     <Content Include="Images\websiteUnderConstruction.jpg" />
+    <Content Include="meetTheTeam.html" />
     <Content Include="property-detail.html" />
+    <Content Include="sales.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -593,6 +614,7 @@
     <Content Include="properties.html" />
     <Content Include="rentals.html" />
     <Content Include="Scripts\ui-utils.js" />
+    <Content Include="team.html" />
     <Content Include="tenant_template.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -604,7 +626,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
     <Content Include="Scripts\version.json" />
   </ItemGroup>

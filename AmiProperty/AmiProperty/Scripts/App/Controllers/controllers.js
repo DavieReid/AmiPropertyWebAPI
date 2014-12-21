@@ -28,10 +28,15 @@ angular.module('amiproperty')
             templateUrl: 'property-detail.html'
         });
 
-        $routeProvider.when('/rent',
+        $routeProvider.when('/sales',
         {
-            templateUrl: 'rentals.html'
+            templateUrl: 'sales.html'
         });
+        
+        $routeProvider.when('/team',
+       {
+           templateUrl: 'team.html'
+       });
 
         $routeProvider.otherwise(
         {
@@ -62,6 +67,14 @@ angular.module('amiproperty').controller('NavCtrl',
 
     $scope.loadContact = function () {
         $location.url('/contact');
+    };
+    
+    $scope.loadSales = function () {
+        $location.url('/sales');
+    };
+    
+    $scope.loadTeam = function () {
+        $location.url('/team');
     };
 
 }]);

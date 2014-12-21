@@ -38,7 +38,9 @@
                         <ul class="nav navbar-nav">
                             <li data-ng-class="navClass('home')"><a href="" data-ng-click="loadHome()">Home</a></li>
                             <li data-ng-class="navClass('about')"><a href="" data-ng-click="loadAbout()">About</a></li>
-                            <li data-ng-class="navClass('properties')"><a href="" data-ng-click="loadProperties()">Properties</a></li>
+                            <li data-ng-class="navClass('properties')"><a href="" data-ng-click="loadProperties()">Executive Lets</a></li>
+                            <li data-ng-class="navClass('sales')"><a href="" data-ng-click="loadSales()">Sales & Investment</a></li>
+                            <li data-ng-class="navClass('team')"><a href="" data-ng-click="loadTeam()">Meet the Team</a></li>
                             <li data-ng-class="navClass('contact')"><a href="" data-ng-click="loadContact()">Contact</a></li>
                         </ul>
                     </div>
@@ -53,7 +55,6 @@
     <!-- FOOTER -->
     <div class="container" ng-controller="BackTopCtrl">
         <footer>
-            <p class="pull-right"><a data-ng-click="scrollTo('bodyTop')">Back to top</a></p>
             <p>&copy; amiProperty &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
             <!-- AddThis Follow BEGIN -->
             <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
